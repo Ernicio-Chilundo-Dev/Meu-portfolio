@@ -1,0 +1,179 @@
+/* Estilização Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url(img/banckground.webp);
+}
+
+/* Cabeçalho */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Seções */
+section {
+  padding: 4rem 0;
+}
+
+.sobre-mim {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.minha-foto {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.profile {
+    width: 220px;
+  height: 240px;
+  border-radius: 50%;
+  background: #e2ebf0;
+  padding: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.profile:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.bibliography {
+  background: #e2ebf0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.bibliography:hover{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Animações */
+section h2 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.projeto {
+  background: #e2ebf0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação de Fade In */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  position: relative;
+}
+
+section ul {
+  list-style-type: none;
+  display: flex;
+}
+
+section ul li {
+  margin: 0 10px;
+}
+
+section ul li a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section ul li a:hover {
+  color: #0077b5;
+}
+
+@media (max-width: 600px) {
+  section ul li a {
+    font-size: 24px;
+  }
+}
+
+button{
+  color: #fff;
+  background: #333;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover{
+  background: #0077b5;
+}

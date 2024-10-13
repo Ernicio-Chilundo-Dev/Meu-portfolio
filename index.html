@@ -1,64 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Adicionando Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Adicionando AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Adicionando Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header>
+    <header class="animate__animated animate__fadeInDown">
         <div class="container">
-            <h1>Meu Portfolio</h1>
+            <h1>Ricardo Chilundo</h1>
             <nav>
-            <ul>
-                <li><a href="#sobre">Sobre Me</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <section id="sobre">
+    <section id="sobre" data-aos="fade-up">
         <div class="container">
-            <h2>Sobre Me</h2>
-            <p>Sou um desenvolvedor Full Stack com experiência em PHP, JavaScript, HTML, CSS, WordPress, e MySQL. Gosto de criar
-            soluções eficientes e visualmente atraentes.</p>
-        </div>
-    </section>
+            <h2>Sobre Mim</h2>
+            <div class="sobre-mim projetos-grid">
+                <div class="profile animate__animated animate__zoomIn">
 
-    <section id="projetos">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="projetos-grid">
-                <div class="projeto">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do Projeto 1. Tecnologias: HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/Ricardo-Chilundo" target="_blank">Ver Código</a>
+                    <img src="./img/minha-foto.png" alt="Minha foto" class="minha-foto">
                 </div>
+                <div class="bibliography animate__animated animate__zoomIn">
 
-                <div class="projeto">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do Projeto 2. Tecnologias: PHP, MySQL</p>
-                    <a href="https://github.com/Ricardo-Chilundo" target="_blank">Ver Código</a>
+                    <p>Sou um desenvolvedor Full Stack com experiência em PHP, JavaScript, HTML, CSS, WordPress, e MySQL.
+                        Gosto
+                        de criar soluções eficientes e visualmente atraentes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
+    <section id="projetos" data-aos="fade-right">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo através do email: <a href="mailto:ricardochilundo2@gmail.com">Envie um e-mail</a></p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/ricardo-jermias-chilundo-746912330/">LinkedIn</a></li>
-                <li><a href="https://github.com/Ricardo-Chilundo">GitHub</a></li>
-            </ul>
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto animate__animated animate__zoomIn">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do Projeto 1. Tecnologias: HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/seu-usuario/projeto1" target="_blank"><button class="btn">Ver Código</button></a>
+                </div>
+                <div class="projeto animate__animated animate__zoomIn">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do Projeto 2. Tecnologias: PHP, MySQL</p>
+                    <a href="https://github.com/seu-usuario/projeto2" target="_blank"><button class="btn">Ver Código</button></a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="contato" data-aos="fade-left">
+        <div class="container">
+        <h2><i class="fas fa-envelope"></i> Contato</h2>
+        <p>
+           Estou aberto a novas oportunidades! Entre em contato comigo através do email:
+            <a href="mailto:ricardochilundo2@gmail.com">
+                <i class="fas fa-paper-plane"></i> ricardochilundo2@gmail.com
+            </a>
+        </p>
+
+            <ul>
+                <li><a href="https://www.linkedin.com/in/ricardo-chilundo/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Ricardo-Chilundo" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+
+        </div>
+    </section>
+
     <footer>
-        &copy; 2024 - Meu Portfolio
+        <p>&copy; 2024 - RICARDO CHILUNDO</p>
     </footer>
+
+    <!-- Scripts de animação -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
